@@ -6,8 +6,183 @@
 
 
 
+.header {
+  padding: 50px 0 20px;
+  &__inner {
+    color: $grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  &__title {
+    font-size: 27px;
+    line-height: 1.3;
+    margin-bottom: 35px;
+    max-width: 600px;
+    @extend %raleway-400;
+  }
+
+  &__title--bold {
+    @extend %raleway-700;
+    font-size: 52px;
+    line-height: 1.25;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 1.2;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+    max-width: 550px;
+    position: relative;
+
+    &::before {
+      content:'';
+      width: 92%;
+      height: 3px;
+      position: absolute;
+      bottom: 0;
+      background-color: $accent;
+    }
+  }
+
+  &__benefits-list {
+    font-size: 16px;
+    line-height: 1.27;
+    max-width: 530px;
+    margin-bottom: 24px;
+  }
+
+  &__benefits-item {
+    padding-left: 33px;
+    margin-bottom: 17px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border: 2px solid $accent;
+      border-radius: 50%;
+    }
+  }
+
+  &__img {
+    max-width: 687px;
+    object-fit: contain;
+    margin-top: 150px;
+    position: absolute;
+    z-index: -1;
+    right: -10%;
+  }
+}
 
 
+.benefits {
+  background-color: $accent;
+  padding: 30px 0;
+
+  &__title {
+    @extend %arial;
+    font-size: 80px;
+    line-height: 1;
+    color: $white;
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    max-width: 280px;
+    margin-bottom: 40px;
+  }
+
+  &__item + .benefits__item {
+    margin-left: 130px;
+  }
+
+  &__item:nth-child(4) {
+    margin-left: 0;
+  }
+
+  &__upper-box,
+  &__bottom-box {
+    height: 165px;
+    border-radius: 30px;
+  }
+
+  &__upper-box {
+    background-color: $white;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+    padding: 0 20px 0 25px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+  }
+
+  &__upper-box--hight-scale {
+    display: block;
+
+    h3 {
+      font-size: 29px;
+      line-height: 1.62;
+      text-transform: uppercase;
+      padding-top: 40px;
+      margin-bottom: 6px;
+    }
+  }
+
+  &__item-title {
+    color: $accent;
+    @extend %raleway-800;
+    font-size: 19px;
+  }
+
+  &__item-subtitle {
+    font-size: 15px;
+    line-height: 1.33;
+  }
+
+  &__bottom-box {
+    background-color: $preaccent;
+    color: $white;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+    margin-top: -60px;
+    padding-top: 65px;
+    padding-left: 18px;
+  }
+
+  &__description {
+    font-size: 15px;
+    line-height: 1.67;
+  }
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__btn {
+    background-color: $white;
+    color: $accent;
+
+    &:hover,
+    &:focus {
+      background-color: $preaccent;
+      color: $white;
+
+    }
+  }
+}
 
 
 
