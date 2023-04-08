@@ -19,5 +19,8 @@
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.1",
     "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
   }
 }

@@ -24,7 +24,12 @@
     @extend %raleway-400;
   }
 
+  &__title--section {
+    margin-bottom: 0;
+  }
+
   &__title--bold {
+    display: block;
     @extend %raleway-700;
     font-size: 52px;
     line-height: 1.25;
@@ -337,8 +342,175 @@
   }
 }
 
+.diploma {
+  background-color: $white;
+  padding: 53px 0 77px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    @extend %raleway-500;
+    font-size: 48px;
+    line-height: 1.04;
+    
+    position: relative;
+    padding-bottom: 32px;
+    margin-bottom: 38px;
+
+    &::after {
+      content: '';
+      width: 576px;
+      height: 3px;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      background-color: $bright-grey;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 1.15;
+
+    margin-bottom: 15px;
+    max-width: 530px;
+  }
+
+  &__img-box {
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 185px;
+      height: 222px;
+
+      background-image: url('../images/diploma.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      position: absolute;
+      top: 158px;
+      right: -30px;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+    max-width: 455px;
+  }
+}
 
 
+.reviews {
+  padding: 50px 0;
+  background-color: $white;
 
+  &__list {
+    max-width: 860px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__img {
+    max-width: 860px;
+    object-fit: contain;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    li {
+      padding: 5px;
+      line-height: 0;
+      margin-top: 40px;
+      button {
+        padding: 0;
+        font-size: 0;
+        line-height: 0;
+        background-color: transparent;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+        border: none;
+
+        &::before {
+          content: '';
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: #c7c7c7;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: background-color 0.3s linear;
+        }
+}
+    &.slick-active {
+        button {
+        &::before {
+          background-color: #222222;
+        }
+        }
+      }
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: none;
+    line-height: 0;
+    background-color: #E8E8E8;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      width: 9px;
+      height: 18px;
+    }
+  }
+
+  .slick-prev {
+    left: -70px;
+
+    &::before {
+      background-image: url('../images/icons/arrow-left.svg');
+    }
+  }
+
+  .slick-next {
+    right: -70px;
+
+    &::before {
+      background-image: url('../images/icons/arrow-right.svg');
+    }
+  }
+
+}
 
 @import 'media';
