@@ -47,3 +47,99 @@ a {
     background-color: $accenthover;
   }
 }
+
+
+.iti__flag {background-image: url("../images/flags/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("../images/flags/flags@2x.png");}
+}
+
+.popup-window {
+  @extend %bedas;
+  padding: 0 45px;
+  &__title {
+    font-size: 36px;
+    line-height: 1.23;
+
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    text-align: center;
+    color: $grey;
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    padding: 10px 10px 10px 5px;
+    border: 1px solid $grey;
+    outline: transparent;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  &__label {
+    display: flex;
+    align-items: start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    font-size: 15px;
+    line-height: 1.22;
+  }
+
+  &__checkbox-hidden {
+    @extend %checkbox-hidden;
+
+    &:checked + .popup-window__checkbox {
+      background-image: url("../images/icons/check-on.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      border-color: $black;
+      
+    }
+  }
+
+  &__checkbox {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid $bright-grey;
+    transition: border-color 0.1s ease-in-out;
+  }
+
+  &__checkbox-text {
+    padding-left: 30px; 
+  }
+
+  &__checkbox-link {
+    color: $accent;
+    border-bottom: 1px solid $accent;
+  }
+
+  &__btn {
+    background-color: #086b56;
+    padding: 20px 0;
+    font-size: 16px;
+    outline: transparent;
+    border: none;
+    color: $white;
+    @extend %raleway-800;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    &:focus,
+    &:hover {
+      background-color: $accent;
+    }
+  }
+}
+

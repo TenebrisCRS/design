@@ -57,9 +57,37 @@
         <img class="header__img" src="images/header.png" alt="Картинка дизайнера">
       </div>
 
-      <button class="header__btn popup-btn">
+      <button data-fancybox data-src="#popup-window" class="header__btn popup-btn">
         Получить материалы
       </button>
+
+      <div id="popup-window" style="display:none; max-width:600px; height: 530px;">
+        <div class="popup-window">
+          <h2 class="popup-window__title">
+            Получить бесплатные материалы
+          </h2>
+
+          <p class="popup-window__text">
+            Заполните форму ниже и вы перейдете на страницу с материалами
+          </p>
+
+          <form class="popup-window__form">
+            <input type="text" class="popup-window__input" placeholder="Имя">
+            <input type="tel" class="popup-window__input" id="popup-window__input-tel" placeholder="(800)555-35-35">
+            <label class="popup-window__label">
+              <input class="popup-window__checkbox-hidden" type="checkbox" checked>
+              <span class="popup-window__checkbox"></span>
+              <p class="popup-window__checkbox-text">
+                Я даю согласие на обработку персональных данных и согласен с
+                <a class="popup-window__checkbox-link" href="#">
+                  политикой конфиденциальности
+                </a> 
+              </p>
+            </label>
+            <button class="popup-window__btn" type="submit">Получить материалы</button>
+          </form>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -148,7 +176,7 @@
         </ul>
 
         <div class="benefits__wrapper">
-          <button class="benefits__btn popup-btn">
+          <button data-fancybox data-src="#popup-window" class="benefits__btn popup-btn">
             Получить материалы
           </button>
         </div>
@@ -221,7 +249,7 @@
             Попробуй себя в профессии дизайнера интерьеров, получи подборку полезных материалов
           </p>
 
-          <button class="portfolio__btn popup-btn">
+          <button data-fancybox data-src="#popup-window" class="portfolio__btn popup-btn">
             Получить бесплатные материалы
           </button>
         </div>
@@ -291,10 +319,10 @@
                 Забери бесплатные материалы
               </span>
             </h1>
-  
+
             <p class="header__text">
             </p>
-  
+
             <ul class="header__benefits-list">
               <li class="header__benefits-item">
                 <p class="header__benefits-text">
@@ -303,7 +331,8 @@
               </li>
               <li class="header__benefits-item">
                 <p class="header__benefits-text">
-                  4 видеоурока из нашего полного курса на тему «Актуальные стили и тренды в дизайне интерьера в 2023 году»
+                  4 видеоурока из нашего полного курса на тему «Актуальные стили и тренды в дизайне интерьера в 2023
+                  году»
                 </p>
               </li>
               <li class="header__benefits-item">
@@ -325,17 +354,134 @@
           </div>
           <img class="header__img" src="images/header.png" alt="Картинка дизайнера">
         </div>
-  
-        <button class="header__btn popup-btn">
+
+        <button data-fancybox data-src="#popup-window" class="header__btn popup-btn">
           Получить материалы
         </button>
+      </div>
+    </section>
+
+    <section class="questions">
+      <div class="container">
+        <div class="questions__inner">
+          <h2 class="questions__title">
+            FAQ
+          </h2>
+
+          <ul class="questions__list">
+            <li class="questions__item">
+              <a class="questions__question" href="#">
+                Можно ли учиться на курсе с нуля?
+              </a>
+              <p class="questions__answer">
+                Да, курс ориентирован на новичков. При поступлении у вас могут быть нулевые знания и опыт. За время
+                обучения вы приобретете все необходимые навыки, которые нужны для старта в профессии.
+              </p>
+            </li>
+            <li class="questions__item">
+              <a class="questions__question" href="#">
+                Могу ли я воспользоваться рассрочкой на обучение? Какие условия рассрочки?
+              </a>
+              <p class="questions__answer">
+                Вы можете воспользоваться рассрочкой от банка-партнера сроком до 24 месяцев. При этом вы не платите
+                проценты или комиссию, все расходы мы берем на себя. Для вас стоимость курса остается неизменной.
+              </p>
+            </li>
+            <li class="questions__item">
+              <a class="questions__question" href="#">
+                Смогу ли я учиться в удобное мне время?
+              </a>
+              <p class="questions__answer">
+                Да, вы можете учиться параллельно с работой и домашними делами. Смотрите лекции в пути, а практические
+                можно сделать на выходных или вечером, как вам удобно.
+              </p>
+            </li>
+            <li class="questions__item">
+              <a class="questions__question" href="#">
+                Что будет, если я не буду успевать?
+              </a>
+              <p class="questions__answer">
+                Мы понимаем, что на курсе учатся взрослые люди, которые совмещают обучение с работой, заботятся о своей
+                семье и близких. Поэтому обучение разбито на блоки с определенными сроками. Куратор курса поможет
+                выстроить процесс обучения и подскажет, что делать, если вы отстаете. Если возникнет необходимость, то
+                поможет продлить сроки прохождения курса.
+              </p>
+            </li>
+            <li class="questions__item">
+              <a class="questions__question" href="#">
+                Какой формат обучения? Есть ли очные курсы?
+              </a>
+              <p class="questions__answer">
+                Наше обучение построено полностью в дистанционном онлайн-формате. Это значит, что вы смотрите
+                видеолекции, выполняете практические задания, получаете обратную связь от экспертов, и вам не нужно
+                тратить время и деньги на выезды в учебное заведение на занятия или сессии. К тому же, вы общаетесь с
+                экспертами и другими студентами из разных городов и даже стран, обмениваетесь опытом и всегда получаете
+                ответы на свои вопросы от команды поддержки.
+              </p>
+            </li>
+            <li class="questions__item">
+              <a class="questions__question" href="#">
+                Если я не умею рисовать, я смогу пройти курс?
+              </a>
+              <p class="questions__answer">
+                Конечно. Необходимость рисования для дизайнера сегодня — это миф. Вы можете работать с различными
+                редакторами и визуализировать свои идеи в программах. Даже те студенты, кто никогда не рисовал ранее,
+                отлично справляются с простой визуализацией маркерами. Получится и у вас!
+              </p>
+            </li>
+            <li class="questions__item">
+              <a class="questions__question" href="#">
+                Получу ли я обратную связь по практическим работам?
+              </a>
+              <p class="questions__answer">
+                Да. Ваши задания проверяют эксперты курса — практикующие дизайнеры интерьера. По каждой выполненной
+                работе они оставят индивидуальные комментарии, советы по доработке и исправлению ошибок.
+              </p>
+            </li>
+            <li class="questions__item">
+              <a class="questions__question" href="#">
+                Получу ли я документ об образовании?
+              </a>
+              <p class="questions__answer">
+                Вы получите сертификат на двух языках и диплом установленного образца
+              </p>
+            </li>
+            <li class="questions__item">
+              <a class="questions__question" href="#">
+                Смогу ли я начать работать после окончания курса?
+              </a>
+              <p class="questions__answer">
+                Вы приобретете все навыки, необходимые для профессионального старта. Также во время учебы вы соберете
+                портфолио, которое сможете представить будущим заказчикам. При должном желании вы сможете начать
+                работать даже в процессе прохождения курса.
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
 
 
   <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#"></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#"></a>
+          </li>
+        </ul>
 
+        <div class="footer__content-box">
+          <a class="footer__link" href="#">Политика конфиденциальности</a>
+          <a class="footer__link" href="#">Публичный договор-оферта</a>
+          <a class="footer__link" href="#">Лицензия</a>
+        </div>
+      </div>
+    </div>
   </footer>
   <script src="js/main.min.js"></script>
 </body>

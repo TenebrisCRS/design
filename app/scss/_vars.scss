@@ -40,3 +40,12 @@ $red: #F20909;
   font-family: 'Raleway-ExtraBold', sans-serif;
   font-weight: 800;
 }
+
+%checkbox-hidden,
+%radio-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}

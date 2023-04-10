@@ -37,6 +37,9 @@ function scripts() {                              //Функция для скр
   return src([                                    //Берём данные из:
     'node_modules/jquery/dist/jquery.js',
     'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+    'node_modules/intl-tel-input/build/js/intlTelInput.js',
+    'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
     'app/js/main.js'
   ])
   .pipe(concat('main.min.js'))                    //Перемещаем в файл при помощи плакина gulp-concat
