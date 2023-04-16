@@ -18,6 +18,8 @@ $(function () {
   var input = document.querySelector("#popup-window__input-tel");
   window.intlTelInput(input, {
     initialCountry: "auto",
+    defaultCountry: "ru",
+    preferredCountries: [ "ru" ],
     geoIpLookup: function(callback) {
       fetch("https://ipapi.co/json")
         .then(function(res) { return res.json(); })
