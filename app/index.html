@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Design</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -57,11 +57,13 @@
         <img class="header__img" src="images/header.png" alt="Картинка дизайнера">
       </div>
 
-      <button data-fancybox data-src="#popup-window" class="header__btn popup-btn">
-        Получить материалы
-      </button>
+      <div class="header__wrapper-btn">
+        <button data-fancybox data-src="#popup-window" class="header__btn popup-btn">
+          Получить материалы
+        </button>
+      </div>
 
-      <div id="popup-window" style="display:none; max-width:600px; height: 530px;">
+      <div id="popup-window" style="display:none;">
         <div class="popup-window">
           <h2 class="popup-window__title">
             Получить бесплатные материалы
@@ -81,7 +83,7 @@
                 Я даю согласие на обработку персональных данных и согласен с
                 <a class="popup-window__checkbox-link" href="#">
                   политикой конфиденциальности
-                </a> 
+                </a>
               </p>
             </label>
             <button class="popup-window__btn" type="submit">Получить материалы</button>
@@ -189,7 +191,7 @@
           <div class="research__content-box">
             <h2 class="research__title">
               Дизайнеры интерьеров
-              востребованы на рынке
+              <span>востребованы на рынке</span>
             </h2>
             <p class="research__text">
               Вы можете удостовериться лично:
@@ -207,7 +209,7 @@
       <div class="container">
         <h2 class="guarantee__title">
           Даем юридическую гарантию по договору по выходу на доход
-          от 100 000 ₽ в профессии дизайнера интерьеров
+          от <span>100 000 ₽</span> в профессии дизайнера интерьеров
         </h2>
 
         <p class="guarantee__text">
@@ -221,27 +223,27 @@
       <div class="container">
         <div class="portfolio__inner">
           <h2 class="portfolio__title">
-            Примеры работ наших учеников. И ты сможешь также:
+            Примеры работ наших учеников. <span>И ты сможешь также:</span>
           </h2>
 
           <ul class="portfolio__list">
             <li class="portfolio__item">
-              <img class="portfolio__img" src="images/portfolio/1.jpg" alt="Картинка работы из портфолио">
+              <img class="portfolio__img" src="images/portfolio/1.jpg" alt="Картинка работы ученика">
             </li>
             <li class="portfolio__item">
-              <img class="portfolio__img" src="images/portfolio/2.jpg" alt="Картинка работы из портфолио">
+              <img class="portfolio__img" src="images/portfolio/2.jpg" alt="Картинка работы ученика">
             </li>
             <li class="portfolio__item">
-              <img class="portfolio__img" src="images/portfolio/3.jpg" alt="Картинка работы из портфолио">
+              <img class="portfolio__img" src="images/portfolio/3.jpg" alt="Картинка работы ученика">
             </li>
             <li class="portfolio__item">
-              <img class="portfolio__img" src="images/portfolio/4.jpg" alt="Картинка работы из портфолио">
+              <img class="portfolio__img" src="images/portfolio/4.jpg" alt="Картинка работы ученика">
             </li>
             <li class="portfolio__item">
-              <img class="portfolio__img" src="images/portfolio/5.jpg" alt="Картинка работы из портфолио">
+              <img class="portfolio__img" src="images/portfolio/5.jpg" alt="Картинка работы ученика">
             </li>
             <li class="portfolio__item">
-              <img class="portfolio__img" src="images/portfolio/6.jpg" alt="Картинка работы из портфолио">
+              <img class="portfolio__img" src="images/portfolio/6.jpg" alt="Картинка работы ученика">
             </li>
           </ul>
 
@@ -261,7 +263,7 @@
         <div class="diploma__inner">
           <div class="diploma__content-box">
             <h2 class="diploma__title">
-              После прохождения обучения вы получите диплом о доп. образовании
+              После прохождения обучения <span> вы получите диплом о доп. образовании</span>
             </h2>
             <p class="diploma__text">
               Мы обучаем по государственной лицензии и выдаём документы и диплом о доп. образовании
@@ -354,13 +356,14 @@
           </div>
           <img class="header__img" src="images/header.png" alt="Картинка дизайнера">
         </div>
-
-        <button data-fancybox data-src="#popup-window" class="header__btn popup-btn">
-          Получить материалы
-        </button>
+        <div class="header__wrapper-btn">
+          <button data-fancybox data-src="#popup-window" class="header__btn popup-btn">
+            Получить материалы
+          </button>
+        </div>
       </div>
     </section>
-
+    
     <section class="questions">
       <div class="container">
         <div class="questions__inner">
@@ -483,7 +486,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/main.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>

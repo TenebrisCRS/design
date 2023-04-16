@@ -24,7 +24,7 @@ function browsersync() {                          //Функция для обн
 function styles () {                              //Функция для стилей
   return src('app/scss/style.scss')               //Берём данные из файла style.scss
   .pipe(scss({outputStyle: 'compressed'}))        //Перерабатываем их в css файл. OutputStyle имеет значения expanded (удобный) и compressed (минифицированный)
-  .pipe(concat('style.min.css'))                  //Перемещаем в файл при помощи плакина gulp-concat
+  .pipe(concat('style.min.css'))                  //Перемещаем в файл при помощи плагина gulp-concat
   .pipe(autoprefixer({                            //Устанавливаем префиксы при помощи gulp-autoprefixer
     overrideBrowserslist: ['last 10 versions'],   //Дополрительная настройка (применять для последних 10 версий)
     grid: true                                    //Дополнительная настройка (применять для display: grid)

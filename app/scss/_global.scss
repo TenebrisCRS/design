@@ -56,6 +56,8 @@ a {
 }
 
 .popup-window {
+  max-width:600px;
+  height: 530px;
   @extend %bedas;
   padding: 0 45px;
   &__title {

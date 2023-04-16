@@ -1,0 +1,427 @@
+@media (max-width: 1200px) {
+  .header {
+    &__img {
+      max-width: 600px;
+    }
+  }
+
+  .benefits__title {
+    font-size: 52px;
+  }
+
+  .research {
+    &__title {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    &__text  {
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .portfolio {
+    &__img {
+      max-width: 280px;
+    }
+  }
+
+  .diploma {
+    &__inner {
+      display: block;
+      text-align: center;
+    }
+    
+    &__content-box {
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      text-align: start;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &__text {
+      max-width: none;
+    }
+
+    &__img-box {
+      margin: 0 auto;
+    }
+  }
+
+  .reviews {
+    & .slick-next {
+      right: -30px;
+    }
+
+    & .slick-prev {
+      left: -30px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    &__img {
+      max-width: 500px;
+    }
+  }
+  .benefits {
+    &__title {
+      font-size: 48px;
+    }
+  }
+
+  .research {
+    padding-top: 10px;
+
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__content-box {
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 25px;
+    }
+
+    &__text {
+      font-size: 22px;
+    }
+
+    &__link {
+      padding: 15px 10px 15px 85px;
+
+      &::before {
+        top: 5px;
+        left: 10px;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .portfolio {
+    &__list {
+      padding: 15px;
+      gap: 15px 20px;
+    }
+
+    &__img {
+      max-width: 250px;
+    }
+  }
+
+  .diploma {
+    &__title {
+      font-size: 47px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+  }
+
+  .reviews {
+    & .slick-next,
+    & .slick-prev {
+      display: none !important;
+    }
+
+    & .slick-dots li {
+      margin-top: 0;
+    }
+  }
+} 
+
+@media (max-width: 900px) {
+  .header {
+    &__inner {
+      justify-content: center;
+    }
+
+    &__img {
+      display: none;
+    }
+
+    &__wrapper-btn {
+      text-align: center;
+    }
+  }
+
+  .benefits {
+    &__title {
+      font-size: 43px;
+      margin-bottom: 30px;
+    }
+
+    &__item {
+      margin: 0 10px 30px;
+    }
+  }
+
+  .portfolio {
+    padding: 20px 0;
+
+    &__title {
+      font-size: 35px;
+      margin-bottom: 30px;
+    }
+
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .diploma {
+    padding: 20px 0 77px;
+    &__title {
+      font-size: 28px;
+
+      span {
+        display: inline-block;
+      }
+    }
+  }
+
+  .reviews {
+    &__list {
+      max-width: 100%;
+    }
+
+    &__img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    padding: 20px 0;
+
+    &__title {
+      font-size: 23px;
+      margin-bottom: 8px;
+    }
+
+    &__title--bold {
+      font-size: 35px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__benefits-item {
+      margin-bottom: 10px;
+    }
+
+    &__btn {
+      margin-right: 0;
+    }
+  }
+
+  .benefits {
+    &__title {
+      font-size: 36px;
+    }
+
+    &__item {
+      max-width: 100%;
+    }
+  }
+
+  .research {
+    &__img {
+      max-width: 420px;
+    }
+
+    &__title {
+      span {
+        display: inline-block;
+      }
+    }
+  }
+
+  .guarantee {
+    padding: 20px 0;
+
+    &__title {
+      font-size: 23px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+  }
+
+  .portfolio  {
+    &__title {
+      font-size: 24px;
+    }
+
+    &__list {
+      padding: 10px;
+      gap: 10px 15px;
+    }
+
+    &__img {
+      max-width: 185px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+  }
+
+  .diploma {
+    &__title {
+      font-size: 20px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__img {
+      max-width: 365px;
+    }
+  }
+
+  .reviews {
+    padding: 30px 0;
+  }
+
+  .questions {
+    &__question {
+      padding: 20px 50px 20px 20px;
+      font-size: 18px;
+    }
+
+    &__answer {
+      padding: 0px 20px 20px 20px;
+      font-size: 16px;
+    }
+  }
+
+  .popup-window {
+    height: 480px;
+
+    &__title {
+      font-size: 23px;
+    }
+  }
+} 
+
+@media (max-width: 450px) {
+  .header {
+    &__title {
+      font-size: 20px;
+    }
+
+    &__title--bold {
+      font-size: 26px;
+    }
+  }
+
+  .benefits {
+    &__title {
+      font-size: 25px;  
+    }
+  }
+
+  .research {
+    &__title {
+      font-size: 20px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__img {
+      max-width: 300px;
+    }
+  }
+
+  .portfolio {
+    padding: 10px 0;
+
+    &__title {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      margin-bottom: 15px;
+    }
+
+    &__img {
+      max-width: 260px;
+    }
+  }
+
+  .diploma {
+    padding: 20px 0 0;
+    &__title {
+      font-size: 18px;
+    }
+
+    &__img-box{
+      &::after {
+        width: 100px;
+        height: 120px;
+        background-size: contain;
+        top: 112px;
+        right: -15px;
+      }
+    }
+
+    &__img {
+      max-width: 285px;
+    }
+  }
+
+  .footer {
+    &__inner {
+      display: block;
+    }
+
+    &__social-list {
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+
+    &__content-box {
+      align-items: center;
+    }
+  }
+
+  .popup-window {
+    padding: 0;
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    .fancybox-content {
+      padding: 20px;
+    }
+  }
+}
