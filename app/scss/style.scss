@@ -78,11 +78,10 @@
   }
 
   &__img {
-    max-width: 687px;
     object-fit: contain;
-    margin-top: 150px;
     position: absolute;
     z-index: -1;
+    top: 100px;
     right: 0%;
   }
 }
@@ -228,7 +227,7 @@
       width: 54px;
       height: 58px;
 
-      background-image: url('../images/icons/coursor.png');
+      background-image: url('../images/dist/icons/coursor.png');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -243,7 +242,7 @@
       width: 61px;
       height: 61px;
 
-      background-image: url('../images/icons/hh.png');
+      background-image: url('../images/dist/icons/hh.png');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -394,7 +393,7 @@
       width: 185px;
       height: 222px;
 
-      background-image: url('../images/diploma.webp');
+      background-image: url('../images/dist/diploma.webp');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -503,7 +502,7 @@
     left: -70px;
 
     &::before {
-      background-image: url('../images/icons/arrow-left.svg');
+      background-image: url('../images/dist/sprite.svg#icons--arrow-left');
     }
   }
 
@@ -511,7 +510,7 @@
     right: -70px;
 
     &::before {
-      background-image: url('../images/icons/arrow-right.svg');
+      background-image: url('../images/dist/sprite.svg#icons--arrow-right');
     }
   }
 }
@@ -561,6 +560,7 @@
       right: 11px;
       z-index: 1;
       transition: opacity 0.3s ease-in-out;
+      pointer-events: none;
     }
 
     &:hover {
@@ -638,7 +638,7 @@
 
   &__social-item:nth-child(1) {
     .footer__social-link {
-      background-image: url("../images/icons/vk.png");
+      background-image: url("../images/dist/icons/vk.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -651,7 +651,7 @@
 
   &__social-item:nth-child(2) {
     .footer__social-link {
-      background-image: url("../images/icons/tg.png");
+      background-image: url("../images/dist/icons/tg.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;

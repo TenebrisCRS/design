@@ -61,10 +61,10 @@ a {
 }
 
 
-.iti__flag {background-image: url("../images/flags/flags.png");}
+.iti__flag {background-image: url("../images/dist/flags/flags.png");}
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .iti__flag {background-image: url("../images/flags/flags@2x.png");}
+  .iti__flag {background-image: url("../images/dist/flags/flags@2x.png");}
 }
 
 .popup-window {
@@ -72,6 +72,8 @@ a {
   height: 530px;
   @extend %bedas;
   padding: 0 45px;
+  z-index: 100;
+
   &__title {
     font-size: 36px;
     line-height: 1.23;
@@ -114,7 +116,7 @@ a {
     @extend %checkbox-hidden;
 
     &:checked + .popup-window__checkbox {
-      background-image: url("../images/icons/check-on.svg");
+      background-image: url("../images/dist/sprite.svg#icons--check-on");
       background-repeat: no-repeat;
       background-position: center center;
       border-color: $black;
@@ -157,3 +159,6 @@ a {
   }
 }
 
+.iti-mobile .iti--container {
+  z-index: 99992;
+}

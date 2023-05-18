@@ -56,11 +56,15 @@
             </li>
           </ul>
         </div>
-        <img class="header__img" src="images/header.webp" alt="Картинка дизайнера">
+        <picture>
+          <source srcset="images/dist/header.avif">
+          <source srcset="images/dist/header.webp">
+          <img class="header__img" src="images/dist/header.png" width="687px" alt="Картинка дизайнера">
+        </picture>
       </div>
 
       <div class="header__wrapper-btn">
-        <button data-fancybox data-src="#popup-window" class="header__btn popup-btn">
+        <button data-fancybox data-options='{"touch" : false}' data-src="#popup-window" class="header__btn popup-btn">
           Получить материалы
         </button>
       </div>
@@ -77,7 +81,8 @@
 
           <form class="popup-window__form">
             <input type="text" class="popup-window__input" placeholder="Имя" required>
-            <input type="tel" class="popup-window__input" id="popup-window__input-tel" placeholder="(800)555-35-35" required>
+            <input type="tel" class="popup-window__input" id="popup-window__input-tel" placeholder="(800)555-35-35"
+              required>
             <label class="popup-window__label">
               <input class="popup-window__checkbox-hidden" type="checkbox" checked>
               <span class="popup-window__checkbox"></span>
@@ -180,7 +185,7 @@
         </ul>
 
         <div class="benefits__wrapper">
-          <button data-fancybox data-src="#popup-window" class="benefits__btn popup-btn">
+          <button data-fancybox data-options='{"touch" : false}' data-src="#popup-window" class="benefits__btn popup-btn">
             Получить материалы
           </button>
         </div>
@@ -202,7 +207,11 @@
               hh.ru
             </a>
           </div>
-          <img class="research__img" src="images/phone.webp" alt="Картинка телефона с сайтом ххру">
+          <picture>
+            <source srcset="images/dist/phone.avif">
+            <source srcset="images/dist/phone.webp">
+            <img class="research__img" src="images/dist/phone.png" alt="Картинка телефона с сайтом ххру">
+          </picture>
         </div>
       </div>
     </section>
@@ -230,22 +239,52 @@
 
           <ul class="portfolio__list">
             <li class="portfolio__item">
-              <img class="portfolio__img" loading="lazy" src="images/portfolio/1.webp" alt="Картинка работы ученика">
+              <picture>
+                <source srcset="images/dist/portfolio/1.avif">
+                <source srcset="images/dist/portfolio/1.webp">
+                <img class="portfolio__img" loading="lazy" src="images/portfolio/dist/1.jpg"
+                  alt="Картинка работы ученика">
+              </picture>
             </li>
             <li class="portfolio__item">
-              <img class="portfolio__img" loading="lazy" src="images/portfolio/2.webp" alt="Картинка работы ученика">
+              <picture>
+                <source srcset="images/dist/portfolio/2.avif">
+                <source srcset="images/dist/portfolio/2.webp">
+                <img class="portfolio__img" loading="lazy" src="images/portfolio/dist/2.jpg"
+                  alt="Картинка работы ученика">
+              </picture>
             </li>
             <li class="portfolio__item">
-              <img class="portfolio__img" loading="lazy" src="images/portfolio/3.webp" alt="Картинка работы ученика">
+              <picture>
+                <source srcset="images/dist/portfolio/3.avif">
+                <source srcset="images/dist/portfolio/3.webp">
+                <img class="portfolio__img" loading="lazy" src="images/portfolio/dist/3.jpg"
+                  alt="Картинка работы ученика">
+              </picture>
             </li>
             <li class="portfolio__item">
-              <img class="portfolio__img" loading="lazy" src="images/portfolio/4.webp" alt="Картинка работы ученика">
+              <picture>
+                <source srcset="images/dist/portfolio/4.avif">
+                <source srcset="images/dist/portfolio/4.webp">
+                <img class="portfolio__img" loading="lazy" src="images/portfolio/dist/4.jpg"
+                  alt="Картинка работы ученика">
+              </picture>
             </li>
             <li class="portfolio__item">
-              <img class="portfolio__img" loading="lazy" src="images/portfolio/5.webp" alt="Картинка работы ученика">
+              <picture>
+                <source srcset="images/dist/portfolio/5.avif">
+                <source srcset="images/dist/portfolio/5.webp">
+                <img class="portfolio__img" loading="lazy" src="images/portfolio/dist/5.jpg"
+                  alt="Картинка работы ученика">
+              </picture>
             </li>
             <li class="portfolio__item">
-              <img class="portfolio__img" loading="lazy" src="images/portfolio/6.webp" alt="Картинка работы ученика">
+              <picture>
+                <source srcset="images/dist/portfolio/6.avif">
+                <source srcset="images/dist/portfolio/6.webp">
+                <img class="portfolio__img" loading="lazy" src="images/portfolio/dist/6.jpg"
+                  alt="Картинка работы ученика">
+              </picture>
             </li>
           </ul>
 
@@ -253,7 +292,7 @@
             Попробуй себя в профессии дизайнера интерьеров, получи подборку полезных материалов
           </p>
 
-          <button data-fancybox data-src="#popup-window" class="portfolio__btn popup-btn">
+          <button data-fancybox data-options='{"touch" : false}' data-src="#popup-window" class="portfolio__btn popup-btn">
             Получить бесплатные материалы
           </button>
         </div>
@@ -277,7 +316,11 @@
             </p>
           </div>
           <div class="diploma__img-box">
-            <img class="diploma__img" src="images/certificate.jpg" alt="Картинка сертификата и диплома">
+            <picture>
+              <source srcset="images/dist/certificate.avif">
+              <source srcset="images/dist/certificate.webp">
+              <img class="diploma__img" loading="lazy" src="images/dist/certificate.jpg" alt="Картинка сертификата и диплома">
+            </picture>
           </div>
         </div>
       </div>
@@ -288,25 +331,53 @@
         <div class="reviews__inner">
           <ul class="reviews__list">
             <li class="reviews__item">
-              <img class="reviews__img" src="images/reviews/1.webp" alt="Картикнка с отзывом">
+              <picture>
+                <source srcset="images/dist/reviews/1.avif">
+                <source srcset="images/dist/reviews/1.webp">
+                <img class="reviews__img" src="images/dist/reviews/1.jpg" alt="Картикнка с отзывом">
+              </picture>
             </li>
             <li class="reviews__item">
-              <img class="reviews__img" loading="lazy" src="images/reviews/2.webp" alt="Картикнка с отзывом">
+              <picture>
+                <source srcset="images/dist/reviews/2.avif">
+                <source srcset="images/dist/reviews/2.webp">
+                <img class="reviews__img" loading="lazy" src="images/dist/reviews/2.jpg" alt="Картикнка с отзывом">
+              </picture>
             </li>
             <li class="reviews__item">
-              <img class="reviews__img" loading="lazy" src="images/reviews/3.webp" alt="Картикнка с отзывом">
+              <picture>
+                <source srcset="images/dist/reviews/3.avif">
+                <source srcset="images/dist/reviews/3.webp">
+                <img class="reviews__img" loading="lazy" src="images/dist/reviews/3.jpg" alt="Картикнка с отзывом">
+              </picture>
             </li>
             <li class="reviews__item">
-              <img class="reviews__img" loading="lazy" src="images/reviews/4.webp" alt="Картикнка с отзывом">
+              <picture>
+                <source srcset="images/dist/reviews/4.avif">
+                <source srcset="images/dist/reviews/4.webp">
+                <img class="reviews__img" loading="lazy" src="images/dist/reviews/4.jpg" alt="Картикнка с отзывом">
+              </picture>
             </li>
             <li class="reviews__item">
-              <img class="reviews__img" loading="lazy" src="images/reviews/5.webp" alt="Картикнка с отзывом">
+              <picture>
+                <source srcset="images/dist/reviews/5.avif">
+                <source srcset="images/dist/reviews/5.webp">
+                <img class="reviews__img" loading="lazy" src="images/dist/reviews/5.jpg" alt="Картикнка с отзывом">
+              </picture>
             </li>
             <li class="reviews__item">
-              <img class="reviews__img" loading="lazy" src="images/reviews/6.webp" alt="Картикнка с отзывом">
+              <picture>
+                <source srcset="images/dist/reviews/6.avif">
+                <source srcset="images/dist/reviews/6.webp">
+                <img class="reviews__img" loading="lazy" src="images/dist/reviews/6.jpg" alt="Картикнка с отзывом">
+              </picture>
             </li>
             <li class="reviews__item">
-              <img class="reviews__img" loading="lazy" src="images/reviews/7.webp" alt="Картикнка с отзывом">
+              <picture>
+                <source srcset="images/dist/reviews/7.avif">
+                <source srcset="images/dist/reviews/7.webp">
+                <img class="reviews__img" loading="lazy" src="images/dist/reviews/7.jpg" alt="Картикнка с отзывом">
+              </picture>
             </li>
           </ul>
         </div>
@@ -356,16 +427,20 @@
               </li>
             </ul>
           </div>
-          <img class="header__img" src="images/header.webp" alt="Картинка дизайнера">
+          <picture>
+            <source srcset="images/dist/header.avif">
+            <source srcset="images/dist/header.webp">
+            <img class="header__img" src="images/dist/header.png" alt="Картинка дизайнера">
+          </picture>
         </div>
         <div class="header__wrapper-btn">
-          <button data-fancybox data-src="#popup-window" class="header__btn popup-btn">
+          <button data-fancybox data-options='{"touch" : false}' data-src="#popup-window" class="header__btn popup-btn">
             Получить материалы
           </button>
         </div>
       </div>
     </section>
-    
+
     <section class="questions">
       <div class="container">
         <div class="questions__inner">
@@ -492,7 +567,7 @@
       </div>
     </div>
   </footer>
-    <script src="js/main.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>

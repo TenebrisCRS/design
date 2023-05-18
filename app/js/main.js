@@ -29,5 +29,5 @@ $(function () {
     separateDialCode: true,
   });
 
-  Fancybox.show([{ src: "#popup-window", type: "inline" }]);
+  Fancybox.show([{ src: "#popup-window", type: "inline"}]);
 })
